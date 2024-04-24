@@ -1,0 +1,73 @@
+$principal: #FBB50A;
+p{
+    text-align: center;
+    margin: 0;
+    font-family: "Roboto" , sans-serif;
+    font-weight: 900;
+    font-style:  normal;
+    display: center;
+    height: 100px;
+    font-family: sans-serif;
+    min-height: 40px;
+    padding: 40px;
+}
+
+p .yatu{
+    color: black;
+    background-color: aliceblue;
+}
+h4{
+    color: $principal;
+    font-size: 24px;
+}
+
+.text2{
+    color: blue;
+
+}
+h5{
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+.p1{
+    color: white;
+}
+
+.p2{
+    color: $principal;
+}
+
+.p3{
+    color: white;
+    margin-bottom: 0;
+}
+
+.p8{
+    font-size: 11px;
+    text-align: none;
+    margin: 0px;
+}
+
+.ya{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.call{
+    color: chartreuse;
+}
+
+.titulo2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    margin-bottom: 25px;
+}

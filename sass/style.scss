@@ -1,0 +1,317 @@
+@use "textos";
+$principal: #FBB50A;
+
+@mixin button-styles($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: textos.darken($background-color, 10%);
+  }
+}
+
+
+@mixin container-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+@mixin form-input-styles {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+@mixin form-submit-button-styles {
+  @include form-input-styles;
+  background-color: $principal;
+  color: white;
+  cursor: pointer;
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  @extend .container-styles; 
+  min-height: 70px;
+  background-color: $principal;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: white;
+  }
+}
+
+main {
+  background-image: url(./media/img/fiesta.jpg);
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background-image: url(./media/img/fiesta2.png);
+  background-repeat: no-repeat;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  @extend .container-styles; 
+}
+
+.container {
+  @extend .container-styles; 
+}
+
+.nosotros-main {
+  background-color: coral;
+  font-size: 50px;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.footer2 {
+  background-color: aliceblue;
+  @extend .container-styles; 
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  @include form-input-styles;
+}
+
+input[type="submit"] {
+  @include form-submit-button-styles;
+}
+
+.event-info {
+  background-color: $principal;
+}
+
+.logo2 {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.container2 {
+  background-color: $principal;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.label2 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="date"],
+textarea {
+  @extend .form-input-styles; 
+  padding: 8px; 
+}
+
+.click {
+  width: 100%;
+  padding: 10px;
+  background-color: $principal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $principal;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sisi2 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./media/img/fiesta.jpg);
+}
+
+.esel2 {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  box-shadow: 0 0 20px black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+label,
+p {
+  font-size: 17px;
+  color: #575757;
+  margin-bottom: 10px;
+}
+
+.fixed {
+  padding: 17px 11px;
+  border: 1px solid #00adef;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+
+    .logo img {
+      margin-bottom: 10px;
+    }
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    @extend .container-styles; 
+    min-height: 70px;
+    background-color: $principal;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  main {
+    padding: 20px;
+    text-align: center;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin: 0 10px 20px;
+      padding: 10px 20px;
+      background-color: $principal;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $principal;
+      }
+    }
+  }
+
+  footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  nav a {
+    &:hover {
+      color: white;
+    }
+  }
+}
