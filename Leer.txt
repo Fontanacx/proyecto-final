@@ -1,2 +1,23 @@
-Hola tutora aqui le dejo mi proyecto
-Ya corregi los errores que me indico tambien agregue un nuevo html para que sea distinto 
+Hola tutora aca dejo mi proyecto final y tambien quisiera aprovechar por el tiempo que se toma para corregir a cada uno de sus alumnos en estos 2 meses se que es su trabajo pero queria decirselo porque no es nada facil!
+
+Aplique todo lo pedido 
+
+6 htmls 100% maquetados con css y 100% responsive.
+
+CSS con SASS
+
+SASS CON MIXINS EXTENDS PARTIALS.
+
+SEO
+
+
+NETLIFY : partypasss.netlify.app
+
+
+LINK DE GITHUB CODIGO : https://github.com/Fontanacx/proyecto-final
+
+LINK DE GITHUB DEPLOY PAGES : https://fontanacx.github.io/proyecto-final/
+
+FIGMA : https://www.figma.com/file/okHlTPPA3P9T8eNxUO3bST/PartyPass?type=design&node-id=0%3A1&mode=design&t=F2KazKn75wMeS8LD-1
+
+PRESUPUESTO: https://drive.google.com/file/d/1kMN2Nl6f0BnHTbNL9C67fVitIYmwofJs/view?usp=sharing
